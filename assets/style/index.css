@@ -10,7 +10,6 @@
   margin: 0;
   padding: 0;
   vertical-align: baseline;
-	/* outline: auto; */
 }
 
 html {
@@ -146,13 +145,14 @@ section {
 }
 
 .box {
-  width: 30%;
+  width: 300px;
   border-radius: 10px;
 	border: 1px solid #26232B;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
   line-height: 1.8;
+  text-align: center;
 }
 
 .box > * {
