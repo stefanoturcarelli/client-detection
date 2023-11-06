@@ -137,7 +137,7 @@ section {
 
 .flex-column {
   flex-direction: column;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .box-head {
