@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Client Detection</title>
+	<title>Client Selection</title>
+	<link rel="stylesheet" href="./assets/style/index.css" media="all">
+	<script src="./assets/script/script.js" defer></script>
 </head>
 
 <body>
+	<div class="container">
+		<section class="flex flex-column">
+			<div class="box">
+				<div class="box-head flex">
+					<h2>SYSTEM</h2>
+				</div>
+				<div class="box-body">
+					<p id="user-os"></p>
+					<p id="user-language"></p>
+					<p id="user-browser"></p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-head flex">
+					<h2>WINDOW</h2>
+				</div>
+				<div>
+					<p id="page-width"></p>
+					<p id="page-height"></p>
+					<p id="device-orientation"></p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-head flex">
+					<h2>BATTERY</h2>
+				</div>
+				<div>
+					<p id="bat-level"></p>
+					<p id="bat-status"></p>
+				</div>
+			</div>
+			<div id="wifi-container" class="box flex">
+				<p id="wifi-status"></p>
+			</div>
+		</section>
+	</div>
 
 </body>
 
