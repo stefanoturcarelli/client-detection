@@ -67,8 +67,10 @@ function getOS() {
   let opSystem = navigator.userAgent;
   if (opSystem.includes('Windows')) {
     userOS.innerText = `OS: Windows`;
-  } else {
+  } else if (opSystem.includes('Mac')) {
     userOS.innerText = `OS: Mac/iOS`;
+  } else {
+    userOS.innerText = `OS: Unknown`;
   }
 }
 
@@ -83,6 +85,8 @@ function getBrowser() {
     browser.innerText = `Browser: Chrome`;
   } else if (browserInfo.includes('Firefox')) {
     browser.innerText = `Browser: Firefox`;
+  } else {
+    browser.innerText = `Browser: Unkown`;
   }
 }
 
